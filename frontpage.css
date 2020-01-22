@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Coustard&display=swap');
+
+*{
+  font-family: 'Coustard', serif;
+  box-sizing: border-box;
+}
+html, body{
+  margin: 0;
+  padding: 0;
+}
+.main-header{
+  background-image: url('headerwallpaper.jpg');
+  color: white;
+  background-size: cover;
+  height: 200px;
+  background-position: center;
+  background-color: black;
+
+}
+
+div.navigationbar {
+  position: sticky;
+  top: 0; 
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  border-radius: 20px;
+  border: 2px solid black;
+  list-style-type: none;
+  margin: 2%;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+li{
+  float: left;
+  border-right: 2px solid black;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover {
+  background-color: rgb(15, 46, 148);
+  color: rgb(255, 255, 255);
+}
+
+.active {
+  background-color: rgba(157, 255, 0, 0.589);
+}
+  
+li 
+  {border-right: none; 
+}
+/* end of nav bar */
+
+.header2 {
+    border: 5px solid green;
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
+    right: 20px;
+}
+
+div.kerangka1 {
+  border: 3px solid black;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+div.kotakgalery {
+  width: auto;
+  position: relative;
+  border: 3px solid black;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto ;
+  block-size: auto;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.onsale{
+  position: relative;
+  border: 1px solid black;
+}
+
+div.gallery {
+  box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 20px;
+  width: 300px;
+  height: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  margin: 10px;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity: 0.1;
+}
+
+div.gallery:hover .overlay{
+  height: 25%;
+  opacity: 1;
+}
+
+.shop-item-price{
+  position: absolute;
+  bottom: 25px;
+  left: 50px;
+  flex-grow: 1;
+  text-align: center;
+}
+/* gallery kelar disini */
+.btn-primary{
+  color: white;
+  border: 2px solid white;
+  background-color: transparent;
+  border-radius: 3em;
+  font-weight: bold;
+  opacity: 1;
+}
+.btn-addtocart{
+  position: absolute;
+  bottom: 25px;
+  left: 150px
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+div.kerangka {
+  text-align: center;
+  margin: 2.5%;
+  border: 3px solid black;
+}
+.cart-header {
+  font-weight: bold;
+  font-size: 1.3em;
+  color: black;
+}
+.cart-column{
+  display: flex;
+  border-bottom: 2px solid black;
+  margin-right: 1.5em;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item{
+  width: 45%;
+}
+
+.cart-price{
+  width: 50%;
+}
+
+.cart-quantity{
+width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image{
+  width: 200px;
+  height: auto;
+}
+.btn-danger{
+  color: white;
+  background-color: #ff6f5e;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  height: 30px;
+}
+
+.btn-danger:hover{
+  background-color: #f0134d ;
+}
+
+.cart-quantity-input{
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+.cart-row:last-child{
+  border-bottom: 5px solid black;
+}
+.cart-row:last-child .cart-column{
+  border: none;
+}
+.cart-total{
+  text-align: end;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.cart-total-title{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price{
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-secondary{
+    color: white;
+    border: 1px solid black;
+    background-color: 192965;
+    border-radius: 10px;
+}
+
+.btn-purchase{
+  display: block;
+  padding: 1em;
+  margin: 40px auto 80px auto;
+  font-size: 1.75em;
+}
+.content-section{
+  margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.shop-item-title{
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: 1.5em;
+}
