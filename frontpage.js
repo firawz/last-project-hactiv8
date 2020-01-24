@@ -6,7 +6,6 @@ if (document.readyState == 'loading'){
 
 function ready(){
     var removeCartItemButton = document.getElementsByClassName("btn-danger")
-    console.log(removeCartItemButton)
     for(i=0; i<removeCartItemButton.length;i++){
         var button = removeCartItemButton[i]
         button.addEventListener('click', removeCartItem)
@@ -107,3 +106,4 @@ function updateCartTotal(){
     // total = Math.round(total * 1000)
     document.getElementsByClassName('cart-total-price')[0].innerText = 'RP' + total + '.000' 
 }
+

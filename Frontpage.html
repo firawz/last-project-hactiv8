@@ -1,114 +1,218 @@
 <html>
-        <head> <link href="frontpage.css" rel="stylesheet" type="text/css">
-            <title> 
-            Garage Sale!<!-- Ini tuh yg muncul di task bar halaman website.--> 
-            </title>
-            <script src="frontpage.js" async></script>
-        </head>
-        <body>
-            <div class="header"> 
-                <h1 class="main-header"> garage sale tai anjing<!-- head 1--></h1>
+    <head>
+        <link href="frontpage.css" rel="stylesheet" type="text/css">
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <title>
+            Garage Sale!<!-- Ini tuh yg muncul di task bar halaman website.--></title>
+        <script src="frontpage.js" async="async"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 class="main-header">
+                garage sale tai anjing<!-- head 1--></h1>
+        </div>
+
+        <nav>
+            <ul class="navigationbar">
+                <li>
+                    <div class="navbar-container">
+                        <a href="#tombol 1">
+                            REGISTER
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="navbar-container">
+                        <a href="#tombol 2">
+                            LOGIN</a>
+                    </li>
+                    <li></div>
+                    <div class="navbar-container">
+                        <a href="#tombol 3">
+                            EVENTS
+                        </a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="navbar-container">
+                        <a href="#tombol 4">
+                            ABOUT</a>
+                    </li>
+                </div>
+                <li>
+                    
+                    <li class="LOGIN" style="float:right">
+                        <div class="navbar-container">
+                            <a href="">
+                                LOGIN</a>
+                            </div>
+
+                        <li class="searchbar">
+                            <input class="searchbar" href="google.com" placeholder="Search..."></input>
+                        </li>
+
+                    </li>
+                </ul>
+
+            </nav>
+        <div class="header2">
+            <!-- nanti disini ada box-->
+            <h2 class="centerh2">WELCOME TO THE SHOP!<!-- Sub judul --></h2>
+        </div>
+            <div class="slide-container">
+                <span id="slider-image-1"></span>
+                <span id="slider-image-2"></span>
+                <span id="slider-image-3"></span>
+                <span id="slider-image-4"></span>
+                <span id="slider-image-5"></span>
+                <div class="image-container">
+                    <img src="clothingstore1.jpg" class="slider-image" alt="">
+                    <img src="clothingstore2.jpg" class="slider-image" alt="">
+                    <img src="clothingstore3.jpg" class="slider-image" alt="">
+                    <img src="clothingstore4.jpg" class="slider-image" alt="">
+                    <img src="clothingstore5.jpg" class="slider-image" alt="">
+                </div>
+                <div class="button-container">
+                    <a  href="#slider-image-1" class="slider-button"></a>
+                    <a  href="#slider-image-2" class="slider-button"></a>
+                    <a  href="#slider-image-3" class="slider-button"></a>
+                    <a  href="#slider-image-4" class="slider-button"></a>
+                    <a  href="#slider-image-5" class="slider-button"></a>
+
+                
+                </div>
             </div>
+        <div class="row kotakgalery">
             
-            <nav><ul>
-            <li><a href="#tombol 1"> Registration </a></li> 
-            <li><a href="#tombol 2"> Events</a></li>
-            <li><a href="#tombol 3"> Login </a></li>
-            <li style="float:right"><a class="active" href="#Status">Login</a></li>
-            </ul>
+                <p class="onsale">
+                    Currently on sale</p>
             
-        </nav>
-            <div class="header2"> <!-- nanti disini ada box-->
-            <h2 class="centerh2">Welcome to our 2nd hand shop aka garage Sale<!-- Sub judul --></h2>
-            </div>
-            
-            <div class="kerangka1">
-                <p>
-                    disini isinya interactive 5 image yg di batasi dengan garis miring trus bisa di slide ke kanan dan ke kiri, kiranya bakal auto slide ke kanan setiap 10 detik
-                </p>
-            </div>
-            
-        <div class="kotakgalery">
-            <p class="onsale"> Currently on sale</p>
-                <div class="gallery">
+            <div class="row sebelahrow">
+                <div class="gallery col-3 ">
                     <span class="shop-item-title">Item 1</span>
-                    <img class="shop-item-image" src="image1.png" alt="baju nomer 1" width="300" height="200">
+                    <img
+                        class="shop-item-image"
+                        src="image1.png"
+                        alt="baju nomer 1">
                     <div class="overlay">
                         <span class="shop-item-price">RP 150.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
                     </div>
-                </div>      
+                </div>
 
-                <div class="gallery">
+                <div class="gallery col-3">
                     <span class="shop-item-title">Item 2</span>
-                <img class="shop-item-image" src="image2.png" alt="baju nomer 2" width="300" height="200">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 170.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-                </div>    
+                    <img
+                        class="shop-item-image"
+                        src="image2.png"
+                        alt="baju nomer 2">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 170.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
                 </div>
-            
-            
-                <div class="gallery">
+
+                <div class="gallery col-3">
                     <span class="shop-item-title">Item 3</span>
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 3" width="300" height="200">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 180.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-                </div>    
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 3">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 180.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
                 </div>
-                
-                <div class="gallery">
+
+                <div class="gallery col-3">
                     <span class="shop-item-title">Item 4</span>
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 4" width="300" height="200">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 150.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-                </div>    
-                 </div>
-
-                <div class="gallery">
-                    <span class="shop-item-title">Item 5</span>
-
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 5" width="300" height="20 0">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 175.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-                </div>    
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 4">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 150.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
                 </div>
 
-                <div class="gallery">
+                <div class="gallery col-3">
+                    <span class="shop-item-title">Item 5</span>
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 5"">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 175.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="gallery col-3">
                     <span class="shop-item-title">Item 6</span>
 
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 6" width="300" height="200">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 165.000</span>
-                    <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-                </div>    
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 6">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 165.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
                 </div>
-                
-                <div class="gallery">
+
+                <div class="gallery col-3">
                     <span class="shop-item-title">Item 7</span>
 
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 7" width="300" height="200">
-                <div class="overlay">
-                    <span class="shop-item-price">RP 130.000</span>
-                <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
-            </div>    
-            </div>
-            
-            <div class="gallery">
-                <span class="shop-item-title">Item 8</span>
-                <img class="shop-item-image" src="image3.png" alt="baju nomer 8" width="300" height="200">
-                <div class="overlay">
-                        <span class="shop-item-price">RP 120.000</span>
-                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button> <!-- ini gimana sih caranya supaya opacity overlaynya 0.5 tapi textnya tuh opacitynya 1-->
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 7">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 130.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
                     </div>
-                <!-- trus mau ganti sama button juga add to cartnya gimana caranya.. jadi buttonnya di dalam overlay-->
+                </div>
+
+                <div class="gallery col-3">
+                    <span class="shop-item-title">Item 8</span>
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 8">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 120.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                        <!-- ini gimana sih caranya supaya opacity overlaynya 0.5 tapi textnya tuh
+                        opacitynya 1-->
+                    </div>
+                </div>
+
+                <div class="gallery col-3">
+                    <span class="shop-item-title">Item 7</span>
+
+                    <img
+                        class="shop-item-image"
+                        src="image3.png"
+                        alt="baju nomer 8">
+                    <div class="overlay">
+                        <span class="shop-item-price">RP 130.000</span>
+                        <button class="btn-primary btn-addtocart" type="button">Add to cart</button>
+                    </div>
+                </div>
+                <!-- trus mau ganti sama button juga add to cartnya gimana caranya.. jadi
+                buttonnya di dalam overlay-->
             </div>
         </div>
-                <section class="container content-section">
-            <h2 class="section-header"> CART </h2>
+        <section class="container content-section">
+            <h2 class="section-header">
+                CART
+            </h2>
             <div class="cart-row">
                 <span class="cart-item cart-header cart-column">Item
                 </span>
@@ -117,9 +221,7 @@
                 <span class="cart-quantity cart-header cart-column">Quantity
                 </span>
             </div>
-            <div class="cart-items">
-                
-            </div>
+            <div class="cart-items"></div>
             <div class="cart-total">
                 <strong class="cart-total-title">TOTAL</strong>
                 <span class="cart-total-price">RP 0</span>
@@ -130,17 +232,16 @@
             </div>
         </section>
 
-            <div class="kerangka">
-                <p>
-                isinya untuk partner yg bekerja sama dengan kita.
-                Di center. ga pake box
-                </p>
-            </div>
-            
-            <!--Navigation Bar-->
-               
+        <div class="kerangka">
+            <p class="kerangka-p">
+                Partner
+            </p>
+        </div>
 
-                <!--class itu digunakan untuk ngasih nickname, apa yg bakal di edit di css nya nanti. 
-                kalau misalnya classnya namanya interactive logo.. di style.css bakal gunain .interactivelogo  untuk ngedit2 yang ada di class column nya--> 
-        </body>
+        <!--Navigation Bar-->
+
+        <!--class itu digunakan untuk ngasih nickname, apa yg bakal di edit di css nya
+        nanti. kalau misalnya classnya namanya interactive logo.. di style.css bakal
+        gunain .interactivelogo untuk ngedit2 yang ada di class column nya-->
+    </body>
 </html>

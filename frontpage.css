@@ -8,68 +8,151 @@ html, body{
   margin: 0;
   padding: 0;
 }
+
 .main-header{
   background-image: url('headerwallpaper.jpg');
   color: white;
   background-size: cover;
-  height: 200px;
+  height: 100px;
   background-position: center;
   background-color: black;
-
+  margin: 0 !important;
 }
 
-div.navigationbar {
+div.navbar-container{
+  border: 1px solid black;
+  border-radius: 0px 0px 20px 20px;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  top: 0;
   position: sticky;
-  top: 0; 
-  float: left;
+  z-index: 1;
 }
-
-ul {
+ul.navigationbar {
+  height: 75px;
+  width: 100%;
   list-style-type: none;
-  border-radius: 20px;
-  border: 2px solid black;
-  list-style-type: none;
-  margin: 2%;
+  margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: transparent;
+  background-color: white;
 }
 
 li{
   float: left;
-  border-right: 2px solid black;
+  margin: 2.1px;
 }
 
 li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 10px 3vw;
 }
-  
+
 li a:hover {
   background-color: rgb(15, 46, 148);
   color: rgb(255, 255, 255);
 }
-
-.active {
-  background-color: rgba(157, 255, 0, 0.589);
+.LOGIN {
+  margin-right: 0;
 }
+.searchbar{
+  display: inherit;
+  width: 55%;
+  margin: 5px;
   
-li 
-  {border-right: none; 
 }
+input.searchbar {
+  background-color: white;
+  display: block;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  width: 100%;
+  }
+
+
 /* end of nav bar */
 
+/* start of image slider */
 .header2 {
-    border: 5px solid green;
+    text-align: center;
     font-size: 20px;
-    top: 0px;
-    left: 0px;
-    right: 20px;
+    padding: 20px;
+    margin-bottom: 0px !important;
 }
 
+.slide-container{
+  width: 800px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.image-container{
+  width: 4000px;
+  height: 600px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+}
+
+.slider-image{
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.button-container{
+  top: -20px;
+  position: relative;
+}
+
+.slider-button{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+#slider-image-1:target ~ .image-container{
+  left: 0px;
+}
+
+#slider-image-2:target ~ .image-container{
+  left: -800px;
+}
+
+#slider-image-3:target ~ .image-container{
+  left: -1600px;
+}
+
+#slider-image-4:target ~ .image-container{
+  left: -2400px;
+}
+
+#slider-image-5:target ~ .image-container{
+  left: -3200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* end of image slider */
 div.kerangka1 {
   border: 3px solid black;
   position: relative;
@@ -78,81 +161,90 @@ div.kerangka1 {
   margin-bottom: 10px;
   
 }
-
+.col-3{
+  -webkit-box-flex: 0;
+    flex: 25% !important; 
+    max-width: 100% !important;
+}
 div.kotakgalery {
   width: auto;
   position: relative;
   border: 3px solid black;
   margin-left: 10%;
   margin-right: 10%;
-  width: auto ;
-  block-size: auto;
-  display: inline-block;
-  box-sizing: border-box;
 }
 
 .onsale{
+  left: 500;
+  width: 800px;
+  height: 60px;
+  margin: 50px;
   position: relative;
-  border: 1px solid black;
+  text-align: center;
+  font-size: 50px;
 }
 
-div.gallery {
-  box-sizing: border-box;
-  box-sizing: border-box;
-  float: left;
-  flex-wrap: wrap;
-  position: relative;
-  margin: 20px;
-  width: 300px;
-  height: auto;
+.gallery {
+  margin-left: 0px;
+  margin-right: 0px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   margin: 10px;
   display: block;
 }
-
+.sebelahrow{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
 .overlay {
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
-  background-color: #008CBA;
+  right: 0;  /* harus pake RGB 0,0,0, 0.3 */
   overflow: hidden;
   width: 100%;
   height: 0;
   transition: .5s ease;
-  opacity: 0.1;
+  
 }
 
 div.gallery:hover .overlay{
   height: 25%;
-  opacity: 1;
+  background-color: rgba(3, 130, 184, 0.7);
 }
 
 .shop-item-price{
   position: absolute;
   bottom: 25px;
-  left: 50px;
+  left: 150px;
   flex-grow: 1;
   text-align: center;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: 10px;
 }
 /* gallery kelar disini */
 .btn-primary{
   color: white;
-  border: 2px solid white;
-  background-color: transparent;
+  background-color: black !important;
+  border-color: White !important;
+  border: 2px solid black;
   border-radius: 3em;
   font-weight: bold;
   opacity: 1;
 }
 .btn-addtocart{
+  background-color: rgb(255, 255, 255);
   position: absolute;
   bottom: 25px;
-  left: 150px
+  left: 350px;
+  opacity: 1;
 }
 div.gallery img {
-  width: 100%;
+  margin-left: 25%;
+  margin: 0px;
+  width: 50%;
   height: auto;
   opacity: 1;
   display: block;
@@ -287,3 +379,17 @@ width: 35%;
   margin-top: 30px;
   font-size: 1.5em;
 }
+img.shop-item-image{
+  margin-left: 25% !important;
+  padding: 10px;
+}
+
+.section-header{
+  margin-top: 100px;
+}
+
+.kerangka-p{
+  margin: auto;
+  font-size: 50px;
+}
+
